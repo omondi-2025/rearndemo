@@ -8,7 +8,7 @@ document.getElementById("depositForm").addEventListener("submit", async (e) => {
   messageEl.textContent = "Processing your deposit... ⏳";
 
   try {
-    const response = await fetch("https://your-backend-url.onrender.com/deposit", {
+    const response = await fetch("https://rearnback.onrender.com/deposit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ phone, amount }),
